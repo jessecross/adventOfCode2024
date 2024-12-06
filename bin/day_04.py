@@ -83,7 +83,7 @@ def collect_letter_coordinates_v2(grid: list) -> dict:
     return mas_dict
 
 
-def count_number_of_mas(mas_dict: dict) -> int:
+def count_number_of_xmas_v2(mas_dict: dict) -> int:
     """For each 'A' coordinate,
     - Take a step in each diagonal direction
     - Match each diagonal coordinate pair with each letter pair
@@ -121,7 +121,7 @@ def count_number_of_mas(mas_dict: dict) -> int:
 def day_04_B(data_path: str) -> None:
     grid = read_data(data_path)
     mas_dict = collect_letter_coordinates_v2(grid)
-    number_of_mas = count_number_of_mas(mas_dict)
+    number_of_mas = count_number_of_xmas_v2(mas_dict)
     print(number_of_mas)
 
 
